@@ -1,0 +1,16 @@
+{
+  "name": "midnight-line",
+  "private": true,
+  "scripts": {
+    "start": "bun server.ts",
+    "deploy": "wrangler deploy",
+    "levelcheck": "bun scripts/levelcheck.ts",
+    "ordercheck": "bun scripts/ordercheck.ts",
+    "playthrough": "bun scripts/playthrough.ts",
+    "check": "bun scripts/levelcheck.ts && bun scripts/ordercheck.ts && bun scripts/playthrough.ts"
+  },
+  "devDependencies": {
+    "playwright-core": "^1",
+    "wrangler": "^4"
+  }
+}
